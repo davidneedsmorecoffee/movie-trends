@@ -14,11 +14,14 @@ df.columns={"Title"}
 films = df["Title"]
 titles = []
 metascore = []
-ratings = []
+imdb_rating = []
+imdb_votes = []
+rated = []
 runtime = []
 released = []
 genre = []
 box_office = []
+year = []
 
 record = 1
 notfound = 0
@@ -30,11 +33,17 @@ for film in films:
     try:
         response = omdb.get(title={film})
         titles.append(response["title"])
+        rated.append(response["rated"])
+        genre.append(response["genre"])
+        
         metascore.append(response["metascore"])
-        ratings.append(response["rated"])
+        imdb_rating.append(response["imdb_rating"])
+        imdb_votes.append(response["imdb_votes"])
+        
         runtime.append(response["runtime"])
         released.append(response["released"])
-        genre.append(response["genre"])
+        year.append(response["year"])
+
         box_office.append(response["box_office"])
         j += 1
         record += 1
@@ -50,5 +59,6 @@ print(f"{pct_movie_found}% of movies found")
 
 # Coverting to a dataframe 
 
-df = pd.DataFrame({'Title': titles, 'Metascore': metascore, 'Ratings': ratings,'Runtime': runtime,'Released': released, 'Genre': genre})
+df = pd.DataFrame({'Title': titles, 'Metascore': metascore, 'Rated': rated,'Runtime': runtime,'Released': released, 'Year': year, 'Genre': genre,
+                  'imdb_rating': imdb_rating, 'imdb_votes': imdb_votes})
 df.to_csv("films.csv", encoding="utf-8", index=False)
