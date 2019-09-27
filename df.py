@@ -6,8 +6,12 @@ import requests
 
 omdb.set_default('apikey', "your api key")
 
-df = pd.read_excel('project1/movies_1999_2019.xlsx',sheet_name = ['2000','2001','2002',2003] ,encoding='latin-1',header = None)
-df.columns={"Title"}
+L99_03 = ['1999','2000','2001','2002','2003']
+L04_08 = ['2004','2005','2006','2007','2008']
+L09_13 = ['2009','2010','2011','2012','2013']
+L14_18 = ['2014','2015','2016','2017','2018']
+df = pd.read_excel('project1/movies_1999_2019.xlsx',sheet_name = SUB_IN_LIST_HERE,encoding='latin-1',header = None)
+# df[0] will be the first year in the list, [1] the second, etc.
 
 # Module for reading CSV files
 
