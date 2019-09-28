@@ -41,6 +41,22 @@ found = 0
 total = len(df)
 j = 0
 
+films = df["Title"]
+titles = []
+metascore = []
+imdb_rating = []
+imdb_votes = []
+rated = []
+runtime = []
+released = []
+genre = []
+box_office = []
+year = []
+
+notfound = 0
+found = 0
+total = len(df)
+j = 0
 
 for film in films:
     try:
