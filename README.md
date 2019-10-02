@@ -25,7 +25,7 @@
 * Code used: *Season_Review.ipynb*
 
 ### Genre and census-related analysis
-* Code used: *genre_and_census.ipynb*
+* Code used: *genre_and_census.ipynb* and *Economy_Indicators.csv*
 
 ### Score-related analyses
 * INSERT CODE USED HERE
