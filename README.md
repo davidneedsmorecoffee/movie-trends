@@ -2,6 +2,7 @@
 
 * Please see below for the analyses performed and the files used and/or generated
 * Please note that there are multiple notebooks for the different analyses
+* See file *movie_trends__ar_dl_nm_rh.pptx* for the powerpoint presentation
 
 ## **API CALL + CLEAN UP**
 ### File with list of movies used for the API call
@@ -26,9 +27,14 @@
 
 ### Genre and census-related analysis
 * Code used: *genre_and_census.ipynb* and *Economy_Indicators.csv*
+* Images folder: *content_rating_images*
+* PoE=Percent of Earning; CR=Content Rating; POM=Percent of Movies 
 
 ### Score-related analyses
-* INSERT CODE USED HERE
+* Code used: *movie_score_analysis.ipynb*
+* Images folder: *movie_score_images* 
+* BO=Box Office; IMDB=Internet Movie Database; RT=Rotten Tomatoes; MC=Metacritic
 
 ### Rating-related analyses
 * Code used: *Content Rating Analysis.ipynb*
+* Images folder: *content_rating_images*
