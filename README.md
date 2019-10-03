@@ -15,8 +15,8 @@
 
 ### CSV clean up
 * Code used: *CSV_Cleanup.ipynb*
-* filter to obtain movies that had more complete dataset
 * filter to focus on movies released on or after 2000
+* also filter to obtain movies that had more complete dataset
 * the file generated is *All_Movies_Working.csv*
 
 
