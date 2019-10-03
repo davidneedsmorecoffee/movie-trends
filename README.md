@@ -7,6 +7,7 @@
 ## **API CALL + CLEAN UP**
 ### File with list of movies used for the API call
 * *movies_1999_2019_singletable_ut8.csv*
+* The list of movies in the above file was scraped from https://en.wikipedia.org/wiki/List_of_American_films_of_####, where the #### represents the year of the movie. Movies from listed from 1999-2019 were obtained.
 
 ### API call and export CSV
 * Code used: api_to_CSV.ipynb
